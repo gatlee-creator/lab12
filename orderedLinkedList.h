@@ -42,6 +42,12 @@ public:
       //               new list, and count is decremented by 1.
       //               If deleteItem is not in the list, an
       //               appropriate message is printed.
+    
+    void deleteSmallest();
+    //Function to delete the smallest item from the list 
+    //Postcondtion: The smallest item in the list should be
+    //              at the beginning of the list. Therefore
+    //              the first item in the list will be deleted 
 };
 
 
@@ -187,5 +193,11 @@ void orderedLinkedList<Type>::deleteNode(const Type& deleteItem)
     }
 }//end deleteNode
 
+
+template<class Type>
+void orderedLinkedList<Type>::deleteSmallest()
+{
+    /*code here*/
+}
 
 #endif
