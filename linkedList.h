@@ -173,6 +173,12 @@ public:
       //               points to the last node of the updated 
       //               list, and count is decremented by 1.
 
+    virtual void deleteSmallest() = 0;
+    //Function to delete the smallest item from the list 
+    //Postcondtion: When found, the node containing the 
+    //              smallestItem is deleted by calling 
+    //              deleteNode 
+
     linkedListIterator<Type> begin();
       //Function to return an iterator at the begining of the 
       //linked list.
