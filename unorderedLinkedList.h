@@ -176,14 +176,14 @@ void unorderedLinkedList<Type>::deleteSmallest()
         cout << "Cannot delete smallest item. List is empty" << endl;
         return; //exit function
     } 
-    //case 3 - find smallest element and delete 
+    //case 2 - find smallest element and delete 
     else if(!this->isEmptyList()){
 
         //we will make first the node the smallest
         nodeType<Type> *temp;
         nodeType<Type> *smallest = new nodeType<Type>;
 
-        temp = this->first; 
+        temp = this->first; //iterator 
         smallest = this->first;
 
         //then itereate through the list 
@@ -198,10 +198,8 @@ void unorderedLinkedList<Type>::deleteSmallest()
         Type capture = smallest->info;
         deleteNode(capture);
         
+        
     }
-
-    //case 4 - all elements are the same - smallest can't be found 
-
 
 } //end deleteSmallest
 
