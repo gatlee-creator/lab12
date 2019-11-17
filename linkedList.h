@@ -179,6 +179,11 @@ public:
     //              smallestItem is deleted by calling 
     //              deleteNode 
 
+    virtual void printReverse() = 0;
+    //Function to print item info in reverse order
+    //Postcondition: printReverse will recursively 
+    //               move through the list in reverse
+
     linkedListIterator<Type> begin();
       //Function to return an iterator at the begining of the 
       //linked list.
