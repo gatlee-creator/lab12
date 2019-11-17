@@ -9,8 +9,9 @@ using namespace std;
 int main()
 {
     unorderedLinkedList<int> listA, listB;          
-    int num;                                        
+    int num;
 
+   
     cout << "Creating list with input 22 7 48 93 14 2 " << endl ;
 
         listA.insertLast(22);                      
@@ -20,46 +21,51 @@ int main()
         listA.insertLast(14);
         listA.insertLast(2);
         
-    cout << endl;                                   
+    cout << endl;
+
+     listA.deleteSmallest();                                        
+                                   
 
     cout << "listA: ";                      
     listA.print();                                  
-    cout << endl;                                   
-    cout << "Length of listA: " 
-         << listA.length() << endl;                 
+    cout << endl;          
+    
+                             
+//     cout << "Length of listA: " 
+//          << listA.length() << endl;                 
 
-    listB = listA;	   //test the assignment operator 
+//     listB = listA;	   //test the assignment operator 
 
-    cout << endl << "listB: ";                     
-    listB.print();                                  
-    cout << endl;                                   
-    cout << "Length of listB: " 
-         << listB.length() << endl;                 
+//     cout << endl << "listB: ";                     
+//     listB.print();                                  
+//     cout << endl;                                   
+//     cout << "Length of listB: " 
+//          << listB.length() << endl;                 
 
-    cout << endl << "Enter the number to be "
-         << "deleted: ";                           
-    cin >> num;                                     
-    cout << endl;                                   
+//     cout << endl << "Enter the number to be "
+//          << "deleted: ";                           
+//     cin >> num;                                     
+//     cout << endl;                                   
 
-    listB.deleteNode(num);                          
+//     listB.deleteNode(num);                          
 	
-    cout << "After deleting " << num 
-         << endl << "listB: " ;                     
-    listB.print();                                  
-    cout << endl;                                
+//     cout << "After deleting " << num 
+//          << endl << "listB: " ;                     
+//     listB.print();                                  
+//     cout << endl;                                
 
-    cout << "Length of listB: " 
-         << listB.length() << endl;              
+//     cout << "Length of listB: " 
+//          << listB.length() << endl;              
 
-    cout << endl << "Output listA " 
-         << "using an iterator:" << endl;            
+//     cout << endl << "Output listA " 
+//          << "using an iterator:" << endl;            
 
-    linkedListIterator<int> it;                  
+//     linkedListIterator<int> it;                  
 
-    for (it = listA.begin(); it != listA.end(); 
-                             ++it)                  
-        cout << *it << " ";                        
-    cout << endl;                                   
+//     for (it = listA.begin(); it != listA.end(); 
+//                              ++it)                  
+//         cout << *it << " ";                        
+//     cout << endl;                                   
 
     return 0;					
 }

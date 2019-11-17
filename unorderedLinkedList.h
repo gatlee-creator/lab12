@@ -172,10 +172,35 @@ template <class Type>
 void unorderedLinkedList<Type>::deleteSmallest()
 {
     //case 1 - list is empty 
+    if(this->isEmptyList()){
+        cout << "Cannot delete smallest item. List is empty" << endl;
+        return; //exit function
+    } 
+    //case 3 - find smallest element and delete 
+    else if(!this->isEmptyList()){
 
-    //case 2 - find smallest element and delete 
+        //we will make first the node the smallest
+        nodeType<Type> *temp;
+        nodeType<Type> *smallest = new nodeType<Type>;
 
-    //case 3 - all elements are the same - smallest can't be found 
+        temp = this->first; 
+        smallest = this->first;
+
+        //then itereate through the list 
+        while (temp != NULL)
+        {
+            if(smallest->info > temp->info)
+                smallest = temp; 
+
+            temp = temp->link;
+        }
+        //capture the smallest and delete it 
+        Type capture = smallest->info;
+        deleteNode(capture);
+        
+    }
+
+    //case 4 - all elements are the same - smallest can't be found 
 
 
 } //end deleteSmallest
