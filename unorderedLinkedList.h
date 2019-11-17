@@ -36,6 +36,12 @@ public:
       //               first points to the first node, last
       //               points to the last node of the updated 
       //               list, and count is decremented by 1.
+    void deleteSmallest();
+    //Function to delete the smallest item from the list 
+    //Postcondtion: if there is a smallest item then 
+    //              deleteNode is called to remove the 
+    //              smallest item from the list 
+    
 };
 
 
@@ -161,6 +167,18 @@ void unorderedLinkedList<Type>::deleteNode(const Type& deleteItem)
         }//end else
     }//end else
 }//end deleteNode
+
+template <class Type>
+void unorderedLinkedList<Type>::deleteSmallest()
+{
+    //case 1 - list is empty 
+
+    //case 2 - find smallest element and delete 
+
+    //case 3 - all elements are the same - smallest can't be found 
+
+
+} //end deleteSmallest
 
 
 #endif
