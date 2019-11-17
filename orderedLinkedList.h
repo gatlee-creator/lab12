@@ -205,7 +205,7 @@ void orderedLinkedList<Type>::deleteSmallest()
 
      //case 2 - first element is always the smallest 
     else{
-        int firstNode = this->front();
+        Type firstNode = this->front();
         this->deleteNode(firstNode); //delete only first occurence 
     }
 
