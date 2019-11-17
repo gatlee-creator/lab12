@@ -8,7 +8,9 @@ using namespace std;
 int main()
 {
     orderedLinkedList<int> list1, list2;        
-    int num;                                    
+    int num; 
+
+                                       
 
     cout << "Creating list with input 77 11 44 99 33 55" << endl ;
 
@@ -21,10 +23,12 @@ int main()
 
     cout << endl;                               
 
+
     cout << "list1: ";                  
     list1.print();                             
-    cout << endl;                               
-
+    cout << endl;            
+    
+        
     list2 = list1; //test the assignment operator 
 
     cout << "list2: ";                 
@@ -51,7 +55,20 @@ cout << endl << "Output list1 "
     for (it = list1.begin(); it != list1.end(); 
                              ++it)                  
         cout << *it << " ";                        
-    cout << endl;          
+    cout << endl;
+
+/*
+====================================================
+NEW TEST EXTENSION 11/17/19
+====================================================
+*/
+    cout << "deleting smallest element from the list1" << endl;
+
+    list1.deleteSmallest();
+
+    cout << "list1: ";                  
+    list1.print();                             
+    cout << endl;   
 
     return 0;					
 }

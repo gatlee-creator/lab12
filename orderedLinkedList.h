@@ -197,7 +197,19 @@ void orderedLinkedList<Type>::deleteNode(const Type& deleteItem)
 template<class Type>
 void orderedLinkedList<Type>::deleteSmallest()
 {
-    /*code here*/
-}
+    //case 1 - list is empty 
+    if(this->isEmptyList()){
+        cout << "Cannot delete smallest element. List is empty." << endl;
+        return; //exit function
+    }
+
+     //case 2 - first element is always the smallest 
+    else{
+        int firstNode = this->front();
+        this->deleteNode(firstNode); //delete only first occurence 
+    }
+
+   
+} //end deleteSmallest 
 
 #endif
