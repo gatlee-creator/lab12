@@ -1,6 +1,10 @@
-//This program tests various operations of an unordered linked list
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Date: 11/18/2019
 
- 
+    Program to test the various operations on an unordered linked list
+*/  
 #include <iostream>
 #include "unorderedLinkedList.h"
 

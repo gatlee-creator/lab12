@@ -1,5 +1,10 @@
-//Program to test the various operations on an ordered linked list
-  
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Date: 11/18/2019
+
+    Program to test the various operations on an ordered linked list
+*/  
 #include <iostream>
 #include "orderedLinkedList.h"
  
