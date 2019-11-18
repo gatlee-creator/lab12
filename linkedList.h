@@ -185,7 +185,7 @@ public:
     //               move through the list in reverse
 
     nodeType<Type>* getFront();
-    //Function that returns the head node 
+    //Function that returns a pointer to the head node 
 
     linkedListIterator<Type> begin();
       //Function to return an iterator at the begining of the 
