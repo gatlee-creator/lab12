@@ -77,10 +77,21 @@ NEW TEST EXTENSION 11/17/19
     
     cout << "printing listA in reverse order" << endl;
     listA.printReverse(listA.getFront());
+    cout << endl;
 
-//     cout << "creating listC of characters" << endl;
-//     unorderedLinkedList<char> listC;
+    cout << "creating listC of characters" << endl;
+    unorderedLinkedList<char> listC;
 
+    cout << "Insert random letters k, j, r, e, p" << endl;
+    listC.insertLast('k');
+    listC.insertLast('j');
+    listC.insertLast('r');   
+    listC.insertLast('e');
+    listC.insertLast('p');
+
+    cout << "listC: "; 
+    listC.print();
+    cout << endl;
 
 
     return 0;					

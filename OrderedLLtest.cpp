@@ -72,6 +72,21 @@ NEW TEST EXTENSION 11/17/19
 
     cout << "printing list1 in reverse order" << endl;
     list1.printReverse(list1.getFront());
+    cout << endl;
+
+    cout << "creating list3 of doubles" << endl;
+    orderedLinkedList<double> list3;
+
+    cout << "Insert random doubles 3.14, 0.2, 10.4, 144.4, 12.62" << endl;
+    list3.insertLast(3.14);
+    list3.insertLast(0.2);
+    list3.insertLast(10.4);   
+    list3.insertLast(144.4);
+    list3.insertLast(12.62);
+
+    cout << "list3: "; 
+    list3.print();
+    cout << endl;
 
     return 0;					
 }
