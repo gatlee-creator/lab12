@@ -42,6 +42,10 @@ public:
     //              deleteNode is called to remove the 
     //              smallest item from the list 
     
+    void printReverse(nodeType<Type>* node);
+    //Function to print item info in reverse order
+    //Postcondition: printReverse will recursively 
+    //               move through the list in reverse
 };
 
 
@@ -203,5 +207,19 @@ void unorderedLinkedList<Type>::deleteSmallest()
 
 } //end deleteSmallest
 
+template <class Type>
+void unorderedLinkedList<Type>::printReverse(nodeType<Type>* node)
+{
+    // Base case  
+    if (node == NULL)  
+        return;  
+  
+    // print the list after first node  
+    printReverse(node->link);  
+  
+    // Once all else is printed, print first  
+    cout << node->info << " ";  
+
+} //end printReverse 
 
 #endif

@@ -74,6 +74,14 @@ NEW TEST EXTENSION 11/17/19
     listA.print();                                  
     cout << endl;  
 
+    
+    cout << "printing listA in reverse order" << endl;
+    listA.printReverse(listA.getFront());
+
+//     cout << "creating listC of characters" << endl;
+//     unorderedLinkedList<char> listC;
+
+
 
     return 0;					
 }

@@ -225,10 +225,10 @@ void orderedLinkedList<Type>::printReverse(nodeType<Type>* node)
     if (node == NULL)  
         return;  
   
-    // print the list after head node  
+    // print the list after first node  
     printReverse(node->link);  
   
-    // After everything else is printed, print head  
+    // Once all else is printed, print first  
     cout << node->info << " ";  
 
     
