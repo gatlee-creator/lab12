@@ -48,6 +48,12 @@ public:
     //Postcondtion: The smallest item in the list should be
     //              at the beginning of the list. Therefore
     //              the first item in the list will be deleted 
+
+    void printReverse(nodeType<Type>& node);
+    //Function to print item info in reverse order
+    //Postcondition: printReverse will recursively 
+    //               move through the list in reverse
+
 };
 
 
@@ -211,5 +217,11 @@ void orderedLinkedList<Type>::deleteSmallest()
 
    
 } //end deleteSmallest 
+
+template<class Type>
+void orderedLinkedList<Type>::printReverse(nodeType<Type>& node)
+{
+    
+} //end printReverse
 
 #endif
