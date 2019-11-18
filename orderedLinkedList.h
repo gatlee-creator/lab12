@@ -221,6 +221,9 @@ void orderedLinkedList<Type>::deleteSmallest()
 template<class Type>
 void orderedLinkedList<Type>::printReverse(nodeType<Type>& node)
 {
+
+    //base condition
+
     
 } //end printReverse
 
