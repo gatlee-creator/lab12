@@ -49,7 +49,7 @@ public:
     //              at the beginning of the list. Therefore
     //              the first item in the list will be deleted 
 
-    void printReverse(nodeType<Type>& node);
+    void printReverse(nodeType<Type>* node);
     //Function to print item info in reverse order
     //Postcondition: printReverse will recursively 
     //               move through the list in reverse
@@ -219,10 +219,17 @@ void orderedLinkedList<Type>::deleteSmallest()
 } //end deleteSmallest 
 
 template<class Type>
-void orderedLinkedList<Type>::printReverse(nodeType<Type>& node)
+void orderedLinkedList<Type>::printReverse(nodeType<Type>* node)
 {
-
-    //base condition
+     // Base case  
+    if (node == NULL)  
+        return;  
+  
+    // print the list after head node  
+    printReverse(node->link);  
+  
+    // After everything else is printed, print head  
+    cout << node->info << " ";  
 
     
 } //end printReverse

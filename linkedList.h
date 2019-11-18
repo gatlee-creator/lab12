@@ -179,10 +179,13 @@ public:
     //              smallestItem is deleted by calling 
     //              deleteNode 
 
-    virtual void printReverse(nodeType<Type>& node) = 0;
+    virtual void printReverse(nodeType<Type>* node) = 0;
     //Function to print item info in reverse order
     //Postcondition: printReverse will recursively 
     //               move through the list in reverse
+
+    nodeType<Type>* getFront();
+    //Function that returns the head node 
 
     linkedListIterator<Type> begin();
       //Function to return an iterator at the begining of the 
@@ -386,5 +389,10 @@ const linkedListType<Type>& linkedListType<Type>::operator=
 
      return *this; 
 }
+
+template <class Type>
+nodeType<Type>* linkedListType<Type>::getFront(){
+    return first;
+} //end getFront 
 
 #endif

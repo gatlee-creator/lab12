@@ -70,6 +70,9 @@ NEW TEST EXTENSION 11/17/19
     list1.print();                             
     cout << endl;   
 
+    cout << "printing list1 in reverse order" << endl;
+    list1.printReverse(list1.getFront());
+
     return 0;					
 }
 
